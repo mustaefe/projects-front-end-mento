@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+  .attribution{ width: auto;}
+
+
+  main{
+    height: 100vh;
+    width: 1440px;
+    background-color: hsl(185, 75%, 39%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle1{
+    background-color: white;
+    background: linear-gradient(
+      to left,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.0)
+    );
+    height: 60rem;
+    width: 60rem;
+    margin: -10rem;
+    position: absolute;
+    border-radius: 50%;
+    top: -20%;
+    left: 5%;
+  }
+
+  .circle2{
+    background-color: white;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255,255,255,0.1),
+      rgba(255,255,255,0.0)
+    );
+    height: 60rem;
+    width: 60rem;
+    margin: -10rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -20%;
+    right: 5%;
+    
+  }
+  #contant{
+    background: #ffffff url("images/bg-pattern-card.svg") no-repeat top;
+    min-height: 35vh;
+    width: 20%;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    z-index: 2;
+  }
+  .image img{
+    margin-top: 6rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  .basic-info{
+    width: 100%;
+    border-bottom: .5px solid hsl(0, 0%, 59%);
+    padding-bottom: 1rem;
+  }
+  .name-age{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    font-size: 18px;
+    font-weight: 400px;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+  }
+  h3{
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    text-align: center;
+  }
+  
+  .age{
+    margin: 0 5px;
+  }
+
+  .city {
+    text-align: center;
+    
+  }
+  .add-info{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  .add-info div{
+    margin: 0 .8rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    main{
+      width: 375px;
+    }
+    #contant{
+      width: 90%;
+    }
+    
+  }
+  
